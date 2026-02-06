@@ -1,0 +1,20 @@
+@import "tailwindcss";
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+label{
+  @apply block py-0.5 text-gray-600
+}
+
+.error{
+  @apply py-2 px-2  font-semibold text-red-700 rounded my-1.5 text-sm 
+}
+
+.success{
+  @apply py-2 px-2  font-semibold text-green-700 bg-green-200 rounded rounded my-1.5 text-sm 
+}
