@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import http from "../utils/http";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+// User profile view component to display user details and their appointments
 export default function UserProfileView() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -46,7 +46,7 @@ export default function UserProfileView() {
             <button onClick={() => navigate(-1)} className="px-4 py-2 border rounded">Back</button>
           </div>
         </div>
-
+          // Show appointments only if it's the same college or admin
         <div className="mt-4">
           <h3 className="font-semibold mb-2">Appointments</h3>
           {(!user.Appointments || user.Appointments.length === 0) ? (
