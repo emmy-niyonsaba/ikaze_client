@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import useAuthStore from "../store/authStore";
-
+// Custom hook to manage authentication state and actions
 export default function useAuth() {
   const navigate = useNavigate();
   const { user, token, login, logout } = useAuthStore();
@@ -21,6 +21,7 @@ export default function useAuth() {
     navigate("/login"); // redirect to login
   }, [logout, navigate]);
 
+  // Return auth state and handlers
   return {
     user,
     token,
