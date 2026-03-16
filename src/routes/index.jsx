@@ -48,6 +48,8 @@ const DepartmentManagerLayout = () => (
   </ProtectedRoute>
 );
 
+// this is the complex one, it needs to check if the user is admin or same college to show appointments
+
 const SecurityManagerLayout = () => (
   <ProtectedRoute allowedRoles={['SECURITY_MANAGER']}>
     <DashboardLayout />
