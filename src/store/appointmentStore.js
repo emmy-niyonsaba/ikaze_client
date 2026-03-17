@@ -38,6 +38,7 @@ export const useAppointmentStore = create(
           });
         }
       },
+      // New method to fetch appointments by doctor
       // Add method to fetch appointments by doctor
 
       createAppointment: async (data) => {
